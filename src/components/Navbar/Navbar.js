@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import navbarStyles from "./navbar.module.css"
+
 
 const Navbar = class extends React.Component {
 
@@ -18,6 +18,8 @@ const Navbar = class extends React.Component {
          // Get the target from the "data-target" attribute
          const target = el.dataset.target;
          const $target = document.getElementById(target);
+
+         //need to add aria-current code here...will add later
  
          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
          el.classList.toggle('is-active');
@@ -32,44 +34,48 @@ const Navbar = class extends React.Component {
    return (
   
   <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item" title="Logo">
-          <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
+    <div className={`container ${navbarStyles.navcontainer}`}>
+      <div className={`navbar-brand ${navbarStyles.logocontainer}`}>
+        <Link to="/" className={`navbar-item ${navbarStyles.logo}`} aria-label="Aaron Farber home page">
+          Aaron Farber
         </Link>
         {/* Hamburger menu */}
-        <div className="navbar-burger burger" data-target="navMenu">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div className="navbar-burger" data-target="navMenu">
+    
+          <div className={navbarStyles.stripes}> 
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          </div>
         </div>
       </div>
       <div id="navMenu" className="navbar-menu">
       <div className="navbar-start has-text-centered">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-        <Link className="navbar-item" to="/contact">
-          Contact
-        </Link>
-        <Link className="navbar-item" to="/contact/examples">
-          Form Examples
-        </Link>
+
       </div>
       <div className="navbar-end has-text-centered">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
+      <ul className={navbarStyles.navlist}>
+        <li className={navbarStyles.navlistitem}>
+      <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/about">
+          About
+        </Link>
+        </li>
+        <li className={navbarStyles.navlistitem}>
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/products">
+          Products
+        </Link>
+        </li>
+        <li className={navbarStyles.navlistitem}>
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact">
+          Contact
+        </Link>
+        </li>
+        <li className={navbarStyles.navlistitem}>
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact/examples">
+          Form Examples
+        </Link>
+        </li>
+        </ul>
       </div>
       </div>
     </div>
