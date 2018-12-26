@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import navbarStyles from "./navbar.module.css"
-
+import home from '../../img/home.png'
 
 const Navbar = class extends React.Component {
 
@@ -33,46 +33,44 @@ const Navbar = class extends React.Component {
  render() {
    return (
   
-  <nav className="navbar is-transparent" role="navigation" aria-label="main-navigation">
+  <nav className="navbar" role="navigation" aria-label="Navigation Bar">
     <div className={`container ${navbarStyles.navcontainer}`}>
       <div className={`navbar-brand ${navbarStyles.logocontainer}`}>
         <Link to="/" className={`navbar-item ${navbarStyles.logo}`} aria-label="Aaron Farber home page">
           Aaron Farber
         </Link>
+        
         {/* Hamburger menu */}
-        <div className="navbar-burger" data-target="navMenu">
-    
-          <div className={navbarStyles.stripes}> 
+        <button className={`navbar-burger ${navbarStyles.whopper}`} data-target="navMenu" aria-label="Navigation Menu Button">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-          </div>
-        </div>
+        </button>
       </div>
       <div id="navMenu" className="navbar-menu">
       <div className="navbar-start has-text-centered">
 
       </div>
-      <div className="navbar-end has-text-centered">
+      <div className="navbar-end">
       <ul className={navbarStyles.navlist}>
         <li className={navbarStyles.navlistitem}>
-      <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/about">
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/about">
           About
         </Link>
         </li>
         <li className={navbarStyles.navlistitem}>
         <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/products">
-          Products
+          Teaching
         </Link>
         </li>
         <li className={navbarStyles.navlistitem}>
         <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact">
-          Contact
+          Development
         </Link>
         </li>
         <li className={navbarStyles.navlistitem}>
         <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact/examples">
-          Form Examples
+          Writing
         </Link>
         </li>
         </ul>

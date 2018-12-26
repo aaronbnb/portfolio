@@ -1,9 +1,73 @@
+:focus {
+    transition: all 0.2s ease;
+}
+
+:focus:not(:focus-visible) { outline: none !important }
+
 .navcontainer {
     width: 100%;
     display: flex;
     align-items: center;
     margin: 0 auto;
     border-bottom: 1px solid #666;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+/* .home {
+    height: 20px;
+    width: 20px;
+    margin-left: .25rem;
+    margin-bottom: 6px;
+    background-image: url('../../img/home.png');
+    background-size: cover;
+    opacity: 0;
+
+}
+
+.logo:hover > .home {
+    opacity: 1;
+} */
+
+.logo:focus, logo:hover {
+    color: #3273dc;
+    transition: all .3s ease-in-out;
+}
+
+.logo:hover::after, .logo:focus::after {
+    content: '←';
+    color: #3273dc;
+    position: relative;
+    transition: all .3s ease-in-out;
+    animation: ani .9s infinite;
+    
+}
+
+@keyframes ani {
+    0% {
+      left: 6px;
+    }
+    50% {
+      left: 0px;
+    }
+    100% {
+      left: 6px;
+    }
+  }
+
+a.navlistlink {
+    height: 100%;
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: .5px;
+    transition: all 0.3s ease;
+    padding-bottom: 0px !important;
+}
+
+a.navlistlink:hover, a.navlistlink:focus {
+    background: #47639b !important;
+    background-clip: padding-box !important;
+    color: white !important;
 }
 
 @media only screen and (max-width: 1084px) {
@@ -18,31 +82,36 @@
     div.navcontainer {
         display: block;
     }
+
+    .logo {
+        margin-bottom: 12px;
+    }
 }
 
 .navlist {
     display: flex;
     margin: 0;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .navlistitem {
     margin: 0;
 }
 
-a.navlistlink {
-    height: 100%;
-    text-transform: uppercase;
-    padding-bottom: 0px !important;
-
-}
-
 .logo {
     padding-bottom: 0px !important;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
 }
+
+
 
 .logocontainer {
     text-transform: uppercase;
+    display: flex !important;
+    align-items: flex-end !important;
 }
 
 .menu {
@@ -60,6 +129,10 @@ a.navlistlink {
 
 }
 
+.whopper {
+    background-color: transparent;
+    border: 0px;
+}
 
 
 .stripes {
