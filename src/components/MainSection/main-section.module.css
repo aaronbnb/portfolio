@@ -1,3 +1,86 @@
-.titled {
-    color: red;
+
+.title {
+    color: #55348e;
+    font-size: 6vw;
+    font-weight: 400;
 }
+
+
+.subtitle {
+    color: #8172a0;
+    font-size: 5vw;
+    font-weight: 400;
+}
+
+@media only screen 
+and (min-width: 530px)
+and (max-width: 659px) {
+    .title {
+        font-size: 4.5vw;
+    }
+
+    .subtitle {
+        font-size: 3vw;
+    }
+}
+
+@media only screen 
+and (min-width: 660px)
+and (max-width: 1086px) {
+    .title {
+        font-size: 4vw;
+    }
+    
+    .subtitle {
+        font-size: 2.5vw;
+    }
+}
+
+.hero {
+    display: flex;
+    padding: 3rem .2rem 1.5rem .2rem;
+    width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+@media only screen 
+and (max-width: 1086px) {
+    .section {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media only screen 
+and (min-width: 1087px) {
+    .title {
+        font-size: 3.5vw;
+    }
+    
+    .subtitle {
+        font-size: 2.5vw;
+    }
+    .section {
+        max-width: 960px;
+        margin: 0 auto;
+    }
+}
+
+.social {
+    width: 55px;
+    height: 210px;
+    background-color: lightgrey;
+    border: 2px grey;
+    margin-left: 3px;
+}
+
+.contained {
+    max-width: 760px;
+}
+
+.socialcontainer {
+    display: flex;
+    align-items: center;
+}
+
