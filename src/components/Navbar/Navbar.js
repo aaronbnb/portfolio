@@ -34,7 +34,7 @@ const Navbar = class extends React.Component {
    return (
   
   <nav className="navbar" role="navigation" aria-label="Navigation Bar">
-    <div className={`container ${navbarStyles.navcontainer}`}>
+    <div className={`${navbarStyles.navcontainer}`}>
       <div className={`navbar-brand ${navbarStyles.logocontainer}`}>
         <Link to="/" className={`navbar-item ${navbarStyles.logo}`} aria-label="Aaron Farber home page">
           Aaron Farber

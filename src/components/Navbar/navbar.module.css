@@ -6,28 +6,16 @@
 
 .navcontainer {
     width: 100%;
+    max-width: 960px;
+    align-items: stretch;
     display: flex;
-    align-items: center;
+    min-height: 3.25rem;
+    width: 100%;
     margin: 0 auto;
     border-bottom: 1px solid #666;
     padding-left: 4px;
     padding-right: 4px;
 }
-
-/* .home {
-    height: 20px;
-    width: 20px;
-    margin-left: .25rem;
-    margin-bottom: 6px;
-    background-image: url('../../img/home.png');
-    background-size: cover;
-    opacity: 0;
-
-}
-
-.logo:hover > .home {
-    opacity: 1;
-} */
 
 .logo:focus, logo:hover {
     color: #3273dc;
@@ -39,11 +27,11 @@
     color: #3273dc;
     position: relative;
     transition: all .3s ease-in-out;
-    animation: ani .9s infinite;
+    animation: aaron .9s infinite;
     
 }
 
-@keyframes ani {
+@keyframes aaron {
     0% {
       left: 6px;
     }

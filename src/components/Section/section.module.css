@@ -1,0 +1,51 @@
+.section {
+    background-color: #001F3F;
+    color: #FFDC00;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 1px 2px 5px 0 rgba(0,0,0,0.2), 0 -1px 5px 0 rgba(0,0,0,0.1);
+    border-radius: 5px;
+    min-height: calc(100vh - 40px);
+    position: relative;
+}
+
+.header {
+    font-weight: 500;
+}
+
+
+@media only screen and (min-width: 620px) {
+    .section {
+        padding: 40px;
+    }
+}
+/* 
+
+fg .    bg
+black + white
+#111 . #ddd + #fff 
+
+white + maroon
+#fff + #85144B 
+
+navy + gray
+#001F3F / #ddd
+
+aqua  +  navy
+#001F3F . #7FDBFF or #111
+
+yellow + navy
+#FFDC00 + #001F3F
+
+silver/white + navy
+
+
+white + purple
+#faf8fe . #6200f2
+
+white + mist/stone/shadow/autumn foliage
+#90AFC5 #336B87
+#2A3132 #763626
+#505160 #68829E
+#324851
+*/

@@ -2,7 +2,9 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import MainSection from '../components/MainSection/MainSection'
+import Hero from '../components/Hero/Hero'
+import Section from '../components/Section/Section'
+
 
 export default class IndexPage extends React.Component {
   render() {
@@ -11,7 +13,12 @@ export default class IndexPage extends React.Component {
 
     return (
       <Layout>
-        <MainSection />
+        <Hero />
+        <Section 
+          heading="I run workshops teaching tech professionals how to build accessible 
+          applications--starting with their own sites."
+        
+        />
       </Layout>
     )
   }
@@ -37,11 +44,6 @@ export const pageQuery = graphql`
           id
           fields {
             slug
-          }
-          frontmatter {
-            title
-            templateKey
-            date(formatString: "MMMM DD, YYYY")
           }
         }
       }
