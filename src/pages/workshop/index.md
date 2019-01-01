@@ -2,6 +2,29 @@
 templateKey: 'workshop-page'
 path: /workshop
 title: About the Workshop
+intro:
+  blurbs:
+    - image: /img/coffee.safasdf
+      text: >
+        We sell green and roasted coffee beans that are sourced directly from
+        independent farmers and farm cooperatives. We’re proud to offer a
+        variesfdsdfa
+  heading: What I do
+  description: >
+    I run workshops that will sock your socks foff
+workshop:
+  modules:
+    - text: D O M
+      time: >
+        10:30
+    - text: HTML5
+      time: >
+        11:30
+    - text: React
+      time: >
+        Undisclosed
+        Exercises:
+        - exercise: /img/coffee.png
 ---
 ### Shade-grown coffee
 Coffee is a small tree or shrub that grows in the forest understory in its wild form, and traditionally was grown commercially under other trees that provided shade. The forest-like structure of shade coffee farms provides habitat for a great number of migratory and resident species.

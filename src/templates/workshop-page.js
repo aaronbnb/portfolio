@@ -11,7 +11,7 @@ export const WorkshopPageTemplate = ({ title, content, contentComponent }) => {
     <section className="section section--gradient">
       <div className="container">
         <div className="columns">
-          <div className="column is-10 is-offset-1">
+          <div className="column is-10">
             <div className="section">
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
@@ -33,7 +33,7 @@ WorkshopPageTemplate.propTypes = {
 
 const WorkshopPage = ({ data }) => {
   const { markdownRemark: post } = data
-
+  console.log(post)
   return (
     <Layout>
       <WorkshopPageTemplate
@@ -57,6 +57,11 @@ export const workshopPageQuery = graphql`
       html
       frontmatter {
         title
+        intro {
+          blurbs {
+            text
+          }
+        }
       }
     }
   }

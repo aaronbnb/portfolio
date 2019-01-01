@@ -43,3 +43,14 @@ collections:
           - {label: Testimonials, name: testimonials, widget: list, fields: [{label: Quote, name: quote, widget: string}, {label: Author, name: author, widget: string}]}
           - {label: Full_image, name: full_image, widget: image}
           - {label: Pricing, name: pricing, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: string}, {label: Plans, name: plans, widget: list, fields: [{label: Plan, name: plan, widget: string}, {label: Price, name: price, widget: string}, {label: Description, name: description, widget: string}, {label: Items, name: items, widget: list}]}]}
+- file: "src/pages/workshop/index.md"
+        label: "Workshop Page"
+        name: "workshop"
+        fields:
+          - {label: "Template Key", name: "templateKey", widget: "hidden", default: "workshop-page"}
+          - {label: Title, name: title, widget: string}
+          - {label: Heading, name: heading, widget: string}
+          - {label: Description, name: description, widget: string}
+          - {label: Workshop, name: workshop, widget: object, fields: [{label: Modules, name: modules, widget: list, fields: [{label: Topic, name: topic, widget: text}, {label: Time, name: time, widget: text}, {label: Exercises, name: exercises, widget: list, fields: [{label: Exercise, name: exercise, widget: text}]}]}]}
+          - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
+          
