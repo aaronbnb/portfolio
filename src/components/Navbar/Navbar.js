@@ -54,23 +54,23 @@ const Navbar = class extends React.Component {
       <div className="navbar-end">
       <ul className={navbarStyles.navlist}>
         <li className={navbarStyles.navlistitem}>
-        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/about">
-          About
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact/examples">
+          Workshops
         </Link>
         </li>
         <li className={navbarStyles.navlistitem}>
         <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/products">
-          Teaching
-        </Link>
-        </li>
-        <li className={navbarStyles.navlistitem}>
-        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact">
           Development
         </Link>
         </li>
         <li className={navbarStyles.navlistitem}>
-        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact/examples">
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact">
           Writing
+        </Link>
+        </li>
+        <li className={navbarStyles.navlistitem}>
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="about">
+          About
         </Link>
         </li>
         </ul>

@@ -6,7 +6,7 @@ import Navbar from './Navbar/Navbar'
 import './all.sass'
 
 const mainStyle = {
-  'max-width': '960px',
+  'maxWidth': '960px',
   'margin': '0 auto',
   'padding': '20px'
 }

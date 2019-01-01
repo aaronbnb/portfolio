@@ -14,10 +14,25 @@ export default class IndexPage extends React.Component {
     return (
       <Layout>
         <Hero />
-        <Section 
-          heading="I run workshops teaching tech professionals how to build accessible 
-          applications--starting with their own sites."
-        
+        <Section
+          emphasis="I run acccessibility workshops" 
+          heading=", teaching developers how to build applications 
+          that support the broadest circle of people"
+          linkText="View Full Workshop Schedule"
+          destination="products"
+          id="1"
+          mainColor="#001F3F"
+          textColor="#f7f7f7"
+        />
+        <Section
+          emphasis="I teach web development and cyber security " 
+          heading="at UCLA Extension. I’ve helped tens of students 
+          change careers into technology. Just like I did."
+          linkText="View Full Workshop Schedule"
+          destination="products"
+          id="1"
+          mainColor="#001F3F"
+          textColor="#f7f7f7"
         />
       </Layout>
     )
