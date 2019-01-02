@@ -3,10 +3,9 @@ import PropTypes from 'prop-types'
 import { WorkshopPageTemplate } from '../../templates/workshop-page'
 
 const WorkshopPagePreview = ({ entry, widgetFor }) => (
-  <WorkshopPageTemplate
-    title={entry.getIn(['data', 'title'])}
-    content={widgetFor('body')}
-  />
+  <div>
+    <h1>We'll fix this later...</h1>
+  </div>
 )
 
 WorkshopPagePreview.propTypes = {
