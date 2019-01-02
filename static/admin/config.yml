@@ -51,6 +51,6 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: Heading, name: heading, widget: string}
           - {label: Description, name: description, widget: string}
-          - {label: Workshop, name: workshop, widget: object, fields: [{label: Modules, name: modules, widget: list, fields: [{label: Topic, name: topic, widget: text}, {label: Time, name: time, widget: text}]}]}
+          - {label: Modules, name: modules, widget: list, fields: [{label: Topic, name: topic, widget: text}, {label: Time, name: time, widget: text}, {label: Exercises, name: exercises, widget: list, fields: [{label: Exercise, name: exercise, widget: string}]}]}
           - {label: Intro, name: intro, widget: object, fields: [{label: Heading, name: heading, widget: string}, {label: Description, name: description, widget: text}, {label: Blurbs, name: blurbs, widget: list, fields: [{label: Image, name: image, widget: image}, {label: Text, name: text, widget: text}]}]}
           

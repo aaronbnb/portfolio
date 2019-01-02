@@ -2,9 +2,7 @@
 templateKey: 'workshop-page'
 path: /workshop
 title: About the Workshop
-intro:
-workshop:
-  modules:
+modules:
     - topic: D O M
       time: "10:30"
       exercises: 
