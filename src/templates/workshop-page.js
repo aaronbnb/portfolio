@@ -57,9 +57,13 @@ export const workshopPageQuery = graphql`
       html
       frontmatter {
         title
-        intro {
-          blurbs {
-            text
+        workshop {
+          modules {
+            topic
+            time
+            exercises {
+              exercise
+            }
           }
         }
       }
