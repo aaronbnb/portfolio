@@ -10,13 +10,13 @@ export const Module = ({ modules }) =>
 
     const moduleRows = modules.map(({ topic, time, exercises}, i) =>
       <tr key={i}>
-        <td>{topic}</td>
+        <td disabled={topic.includes('Break')}>{topic}</td>
         <td>{time}</td>
       </tr>
     );
 
     return (<div>
-    <table>
+    <table className="table is-striped is-bordered">
       <thead>
         <tr>
           <th>Module</th>
@@ -24,10 +24,6 @@ export const Module = ({ modules }) =>
         </tr>
       </thead>
         <tbody>
-          <tr>
-            <td>Module 1</td>
-            <td>Module 2</td>
-          </tr>
           {moduleRows}
         </tbody>
     </table>
@@ -35,9 +31,9 @@ export const Module = ({ modules }) =>
   }
 
 
-export const WorkshopPageTemplate = ({ title, content, contentComponent, modules }) => {
+export const WorkshopPageTemplate = ({ title, content, contentComponent, modules, description }) => {
   const PageContent = contentComponent || Content
-  console.log(modules)
+
   return (
     <section className="section section--gradient">
       <div className="container">
@@ -47,9 +43,10 @@ export const WorkshopPageTemplate = ({ title, content, contentComponent, modules
               <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
                 {title}
               </h2>
+              <p>{description}</p>
               <PageContent className="content" content={content} />
+              <Module modules={modules}/>
             </div>
-            <Module modules={modules}/>
           </div>
         </div>
       </div>
@@ -73,6 +70,7 @@ const WorkshopPage = ({ data }) => {
         title={post.frontmatter.title}
         content={post.html}
         modules={post.frontmatter.modules}
+        description={post.frontmatter.description}
       />
     </Layout>
   )
@@ -90,9 +88,23 @@ export const workshopPageQuery = graphql`
       html
       frontmatter {
         title
+        heading
+        introOne
+        introTwo
+        introThree
+        introFour
+        teaser
+        descriptionOne
+        descriptionTwo
+        descriptionThree
+        descriptionFour
+        description
         modules {
           topic
           time
+          exercises {
+            exercise
+          }
         }
       }
     }

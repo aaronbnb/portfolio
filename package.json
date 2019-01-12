@@ -31,7 +31,6 @@
     "react-helmet": "^5.2.0",
     "react-typography": "^0.16.18",
     "typography": "^0.16.18",
-    "typography-theme-sutro": "^0.16.18",
     "uuid": "^3.2.1"
   },
   "keywords": [

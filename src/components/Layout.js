@@ -8,7 +8,7 @@ import './all.sass'
 const mainStyle = {
   'maxWidth': '960px',
   'margin': '0 auto',
-  'padding': '20px'
+  'outline': 'none'
 }
 
 const TemplateWrapper = ({ children }) => (
@@ -29,7 +29,7 @@ const TemplateWrapper = ({ children }) => (
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content={data.site.siteMetadata.description} />
-          
+          <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
           <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
 	        <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
 	        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
@@ -42,10 +42,10 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/og-image.jpg" />
         </Helmet>
-        <Navbar />
-        <main id="main" style={mainStyle}>
-        {children}
-        </main>
+          <Navbar />
+          <main id="main" style={mainStyle} tabindex="-1">
+            {children}
+          </main>
  
       </div>
     )}

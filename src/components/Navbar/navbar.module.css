@@ -22,7 +22,7 @@
     transition: all .3s ease-in-out;
 }
 
-.logo:hover::after, .logo:focus::after {
+.logo:hover::after, .logo:active::after {
     content: '←';
     color: #3273dc;
     position: relative;
