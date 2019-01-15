@@ -1,7 +1,7 @@
 
 .title {
     color: #55348e;
-    font-size: 7vw;
+    font-size: 6.5vw;
     font-weight: 500;
 }
 
@@ -16,11 +16,11 @@
 and (min-width: 530px)
 and (max-width: 659px) {
     .title {
-        font-size: 4.5vw;
+        font-size: 5vw;
     }
 
     .subtitle {
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
 }
 
@@ -39,7 +39,7 @@ and (max-width: 1086px) {
 .hero {
     display: flex;
     padding: 2.5rem .1rem 1.5rem .2rem;
-    width: 100%;
+    width: 92%;
     margin: 0 auto;
     justify-content: space-between;
     align-items: flex-start;
@@ -60,8 +60,6 @@ and (min-width: 1087px) {
     }
 }
 
-.contained {
-    max-width: 760px;
+div.contained {
+    max-width: 1000px;
 }
-
-

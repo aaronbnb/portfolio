@@ -2,15 +2,14 @@
     transition: all 0.2s ease;
 }
 
-:focus:not(:focus-visible) { outline: none !important }
+
 
 .navcontainer {
-    width: 100%;
-    max-width: 960px;
-    align-items: stretch;
+    align-items: flex-end;
     display: flex;
+    justify-content: space-between;
     min-height: 3.25rem;
-    width: 100%;
+    width: 92%;
     margin: 0 auto;
     border-bottom: 1px solid #666;
     padding-left: 4px;
@@ -58,22 +57,8 @@ a.navlistlink:hover, a.navlistlink:focus {
     color: white !important;
 }
 
-@media only screen and (max-width: 1084px) {
-    ul.navlist {
-        display: block;
-        margin: 0;
-    }
-    a.navlistlink {
-        text-align: left;
-    }
+@media only screen and (max-width: 924px) {
 
-    div.navcontainer {
-        display: block;
-    }
-
-    .logo {
-        margin-bottom: 12px;
-    }
 }
 
 .navlist {
@@ -81,6 +66,7 @@ a.navlistlink:hover, a.navlistlink:focus {
     margin: 0;
     justify-content: center;
     align-items: flex-end;
+    font-weight: 600;
 }
 
 .navlistitem {
@@ -89,8 +75,9 @@ a.navlistlink:hover, a.navlistlink:focus {
 
 .logo {
     padding-bottom: 0px !important;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: -2px;
     letter-spacing: 1px;
 }
 
@@ -117,12 +104,6 @@ a.navlistlink:hover, a.navlistlink:focus {
 
 }
 
-.whopper {
-    background-color: transparent;
-    border: 0px;
-}
-
-
 .stripes {
     display: inline-block;
     width: 25px;
@@ -130,3 +111,117 @@ a.navlistlink:hover, a.navlistlink:focus {
     margin-left: 30px !important;
 }
 
+
+.navvybar {
+    background-color: white;
+    min-height: 3.25rem;
+    position: relative;
+}
+
+
+.navybarmenu {
+    background-color: transparent;
+    display: flex;
+}
+
+@media only screen and (max-width: 924px) {
+    button.navburg {
+        color: #4a4a4a;
+        cursor: pointer;
+        display: block;
+        height: 3.25rem;
+        position: relative;
+        width: 3.25rem;
+        margin-left: auto;
+        background-color: transparent;
+        border: 0px;  
+    }
+
+    button.navburg:hover, button.navburg:focus {
+        background-color: rgba(0,0,0,.05);
+    }
+
+    button.navburg:focus {
+        outline: none;
+    }
+
+    ul.navlists[aria-expanded="false"] {
+        display: none;
+    }
+
+    ul.nav-lists[aria-expanded="true"] {
+        display: block;
+    }
+
+    .navybarmenu[expanded="false"] {
+        display: none;
+    }
+
+    .navybarmenu[expanded="true"] {
+        display: block; 
+    }
+
+    ul.navlist {
+        display: block;
+        margin: 0;
+    }
+    
+    a.navlistlink {
+        text-align: left;
+    }
+
+    div.navcontainer {
+        display: block;
+        width: 100%;
+    }
+
+    .logo {
+        margin-bottom: 12px;
+    }
+}
+
+
+
+@media only screen and (min-width: 925px) {
+    button.navburg {
+        display: none;  
+    }
+
+     ul.navlists {
+        display: flex;
+    }
+}
+
+
+
+
+.navburg span {
+    background-color: currentColor;
+    display: block;
+    height: 1px;
+    left: calc(50% - 8px);
+    position: absolute;
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    transition-duration: 86ms;
+    transition-property: background-color,opacity,-webkit-transform;
+    transition-property: background-color,opacity,transform;
+    transition-property: background-color,opacity,transform,-webkit-transform;
+    transition-timing-function: ease-out;
+    width: 16px;
+
+}
+
+.navburg span:nth-child(1) {
+    top: calc(50% - 6px);
+}
+
+.navburg span:nth-child(2) {
+    top: calc(50% - 1px);
+}
+
+.navburg span:nth-child(3) {
+    top: calc(50% + 4px);
+}
+
+:focus:not(:focus-visible) { outline: none !important }

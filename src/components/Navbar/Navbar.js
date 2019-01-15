@@ -7,7 +7,8 @@ const Navbar = class extends React.Component {
 
   componentDidMount() {
     // Get all "navbar-burger" elements
-   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('#navburg'), 0);
+   console.log($navbarBurgers)
     // Check if there are any navbar burgers
    if ($navbarBurgers.length > 0) {
  
@@ -20,10 +21,19 @@ const Navbar = class extends React.Component {
          const $target = document.getElementById(target);
 
          //need to add aria-current code here...will add later
- 
+        console.log($navbarBurgers)
+        console.log(target)
+        console.log($target);
+        
          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-         el.classList.toggle('is-active');
-         $target.classList.toggle('is-active');
+         if(el.getAttribute('aria-expanded') === 'true') {
+          el.setAttribute('aria-expanded', 'false');
+          $target.setAttribute('expanded', 'false');
+         } else {
+          el.setAttribute('aria-expanded', 'true');
+          $target.setAttribute('expanded', 'true');
+         }
+         
  
        });
      });
@@ -33,7 +43,10 @@ const Navbar = class extends React.Component {
  render() {
    return (
   
-  <nav className="navbar" role="navigation" aria-label="Navigation Bar">
+  <nav className="navbar" 
+      role="navigation" 
+      aria-label="Global Navigation"
+  >
     <div className={`${navbarStyles.navcontainer}`}>
       <div className={`navbar-brand ${navbarStyles.logocontainer}`}>
         <Link to="/" className={`navbar-item ${navbarStyles.logo}`} aria-label="Aaron Farber home page">
@@ -41,17 +54,21 @@ const Navbar = class extends React.Component {
         </Link>
         
         {/* Hamburger menu */}
-        <button className={`navbar-burger ${navbarStyles.whopper}`} data-target="navMenu" aria-label="Navigation Menu Button">
+        <button id="navburg" className={`${navbarStyles.navburg}`} 
+          data-target="navMenu" 
+          aria-label="Navigation Menu Button"
+          aria-expanded="false"
+          aria-controls="navMenu">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
         </button>
       </div>
-      <div id="navMenu" className="navbar-menu">
-      <div className="navbar-start has-text-centered">
-
-      </div>
-      <div className="navbar-end">
+      <div id="navMenu" 
+        className={navbarStyles.navybarmenu}
+        expanded="false">
+ 
+      <div>
       <ul className={navbarStyles.navlist}>
         <li className={navbarStyles.navlistitem}>
         <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact/examples">

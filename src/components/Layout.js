@@ -6,7 +6,7 @@ import Navbar from './Navbar/Navbar'
 import './all.sass'
 
 const mainStyle = {
-  'maxWidth': '960px',
+  'minWidth': '380px',
   'margin': '0 auto',
   'outline': 'none'
 }
@@ -30,20 +30,20 @@ const TemplateWrapper = ({ children }) => (
           <title>{data.site.siteMetadata.title}</title>
           <meta name="description" content={data.site.siteMetadata.description} />
           <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
-          <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png" />
-	        <link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32" />
-	        <link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16" />
+          <link rel="apple-touch-icon" sizes="180x180" href="/img/a-logo.png" />
+	        <link rel="icon" type="image/png" href="/img/a-logo.png" sizes="32x32" />
+	        <link rel="icon" type="image/png" href="/img/a-logo.png" sizes="16x16" />
 	
-	        <link rel="mask-icon" href="/img/safari-pinned-tab.svg" color="#ff4400" />
+	        <link rel="mask-icon" href="/img/a-logo.png" color="#ff4400" />
 	        <meta name="theme-color" content="#fff" />
 
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
-          <meta property="og:image" content="/img/og-image.jpg" />
+          <meta property="og:image" content="/img/a-image.jpg" />
         </Helmet>
           <Navbar />
-          <main id="main" style={mainStyle} tabindex="-1">
+          <main id="main" style={mainStyle} tabIndex="-1">
             {children}
           </main>
  
