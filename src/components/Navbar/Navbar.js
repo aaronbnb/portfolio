@@ -42,19 +42,18 @@ const Navbar = class extends React.Component {
  
  render() {
    return (
-  
-  <nav className="navbar" 
+  <nav className={navbarStyles.navbar}
       role="navigation" 
       aria-label="Global Navigation"
   >
-    <div className={`${navbarStyles.navcontainer}`}>
+    <div className={navbarStyles.navcontainer}>
       <div className={`navbar-brand ${navbarStyles.logocontainer}`}>
         <Link to="/" className={`navbar-item ${navbarStyles.logo}`} aria-label="Aaron Farber home page">
           Aaron Farber
         </Link>
         
         {/* Hamburger menu */}
-        <button id="navburg" className={`${navbarStyles.navburg}`} 
+        <button id="navburg" className={navbarStyles.navburg} 
           data-target="navMenu" 
           aria-label="Navigation Menu Button"
           aria-expanded="false"

@@ -26,7 +26,7 @@ height: 200px;
 margin-left: 32px;
 position: relative;
 z-index: -1;
-margin-bottom: -72px;
+margin-bottom: -78px;
 }
 
 @media only screen
@@ -40,9 +40,9 @@ and (max-width: 832px) {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 32px;
-    padding-left: 8%;
+    padding-left: 34px;
     margin-right: 32px;
-    background-color: #011021;
+    background-color: #011118;
     color: white;
 }
 
@@ -62,3 +62,11 @@ and (max-width: 1300px) {
         color: white;
     }
 }
+
+@media only screen 
+and (min-width: 1180px) {
+    #teaser {
+        margin-right: calc(((100vw - 1200px) / 2) + 140px); 
+    }
+}
+
