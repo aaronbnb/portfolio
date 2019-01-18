@@ -18,12 +18,13 @@ const Teaser = ({ children }) => (
     render={data => (
         <section>
             <div id="big">
+            <div id={teaserStyle.triangle}></div>
                 <div id={teaserStyle.pattern}/>
                 <div id={teaserStyle.teaser}>
-                    <p><strong>I teach web development and cyber security</strong> at UCLA Extension. 
+                    <p className={teaserStyle.header}><strong>I teach web development and cyber securitye3ln45 p</strong> at UCLA Extension. 
                     I’ve helped tens of students change careers into technology. Just like I did.
                     </p>
-                    <p><strong>I run acccessibility workshops</strong> teaching developers how to 
+                    <p className={teaserStyle.header}><strong>I run acccessibility workshops</strong> teaching developers how to 
                     build applications that support the broadest circle of people.
                     </p>
                 </div>

@@ -39,7 +39,7 @@ and (max-width: 1086px) {
 .hero {
     display: flex;
     padding: 2.5rem .1rem 1.5rem .2rem;
-    width: 92%;
+    padding-left: 34px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: flex-start;
