@@ -19,7 +19,7 @@ const Hero = ({ children }) => (
     render={data => (
         <section 
           className={heroStyles.section}
-          aria-labelledby="hero-title"
+          aria-label="Short Bio"
         >
           <div className={heroStyles.hero}>
             <div className={heroStyles.contained}>

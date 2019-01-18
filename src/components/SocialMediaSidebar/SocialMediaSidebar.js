@@ -4,7 +4,7 @@ import sidebarStyles from "./social-media-sidebar.module.css"
 
 const SocialMediaSidebar = () => (
           <div className={sidebarStyles.socialcontainer}>
-            <aside className={sidebarStyles.social}>
+            <aside className={sidebarStyles.social} aria-label="Social Media Information">
             <a href="https://www.twitter.com/life_is_a_sport"
                 title="Twitter - life is a sport" 
                 rel="noopener noreferrer"
