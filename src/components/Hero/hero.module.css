@@ -31,7 +31,7 @@ and (max-width: 1086px) {
 
 .hero {
     display: flex;
-    padding: 2.5rem .1rem 1.5rem .2rem;
+    padding: 2.5rem 0rem 1.5rem .2rem;
     padding-left: 34px;
     margin: 0 auto;
     justify-content: space-between;
