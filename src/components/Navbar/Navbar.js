@@ -8,7 +8,6 @@ const Navbar = class extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('#navburg'), 0);
-   console.log($navbarBurgers)
     // Check if there are any navbar burgers
    if ($navbarBurgers.length > 0) {
  
@@ -21,9 +20,6 @@ const Navbar = class extends React.Component {
          const $target = document.getElementById(target);
 
          //need to add aria-current code here...will add later
-        console.log($navbarBurgers)
-        console.log(target)
-        console.log($target);
         
          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
          if(el.getAttribute('aria-expanded') === 'true') {

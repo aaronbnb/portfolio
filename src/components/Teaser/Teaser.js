@@ -18,20 +18,31 @@ const Teaser = ({ children }) => (
     render={data => (
         <section>
             <div id="big">
-            <div id={teaserStyle.triangle}></div>
-                <div id={teaserStyle.pattern}/>
+                <div id={teaserStyle.pattern}> 
+                    <div id={teaserStyle.patternoverlay}></div>
+                </div>
+               
                 <div id={teaserStyle.teaser}>
-                    <p className={teaserStyle.header}><strong>I teach web development and cyber securitye3ln45 p</strong> at UCLA Extension. 
-                    I’ve helped tens of students change careers into technology. Just like I did.
-                    </p>
-                    <p className={teaserStyle.header}><strong>I run acccessibility workshops</strong> teaching developers how to 
-                    build applications that support the broadest circle of people.
-                    </p>
+                    <div>
+                        <p className={teaserStyle.header}>
+                        <strong>I teach web development and cyber security at UCLA Extension.</strong> 
+                        </p>
+                        <p className={teaserStyle.header}>
+                        I’ve helped tens of students change careers into technology. Just like I did.
+                        </p>
+                    </div>
+                    <br></br> 
+                    <div>
+                        <p className={teaserStyle.header}>
+                            <strong>I run acccessibility workshops</strong> 
+                        </p>
+                        <p className={teaserStyle.header}>
+                        teaching developers how to build applications that support the broadest circle of people.
+                        </p>
+                    </div>
+                    
                 </div>
             </div>
-        <div id="work">
-
-        </div>
         </section>
     )}
   />

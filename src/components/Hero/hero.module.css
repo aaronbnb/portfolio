@@ -1,7 +1,7 @@
 
 .title {
     color: #55348e;
-    font-size: 6.5vw;
+    font-size: 6vw;
     font-weight: 500;
 }
 
@@ -15,9 +15,6 @@
 @media only screen 
 and (min-width: 530px)
 and (max-width: 659px) {
-    .title {
-        font-size: 5vw;
-    }
 
     .subtitle {
         font-size: 3.5vw;
@@ -27,10 +24,6 @@ and (max-width: 659px) {
 @media only screen 
 and (min-width: 660px)
 and (max-width: 1086px) {
-    .title {
-        font-size: 4vw;
-    }
-    
     .subtitle {
         font-size: 2.5vw;
     }
@@ -49,7 +42,7 @@ and (max-width: 1086px) {
 @media only screen 
 and (min-width: 1087px) {
     .title {
-        font-size: 3.5vw;
+        font-size: 4.5vw;
     }
     
     .subtitle {
