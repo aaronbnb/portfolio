@@ -112,6 +112,14 @@ a.navlistlink:hover, a.navlistlink:focus {
         border: 0px;  
     }
 
+    .logocontainer {
+        align-items: center !important;
+    }
+
+    .logo {
+        margin-bottom: 2px !important;
+    }
+
     button.navburg:hover, button.navburg:focus {
         background-color: rgba(0,0,0,.05);
     }

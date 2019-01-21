@@ -6,16 +6,24 @@ import { Link } from 'gatsby'
 
 const Section = props => (
         <section className={sectionStyle.section}>
-        <div className="side"></div>
-          <div className={sectionStyle.hero}>
-              <h2 className={sectionStyle.header}> 
-              <span className={sectionStyle.emphasis}>I run workshops</span>, teaching developers how to build accessible websites 
-              that support the broadest circle of people.
-              </h2>
-           
+            <div className={sectionStyle.container}>
+                <div className={sectionStyle.hero}>
+                    <div className={sectionStyle.text}>
+                    <h2 className={sectionStyle.header}> 
+                    <span className={sectionStyle.emphasis}>I run workshops</span>, teaching developers how to build accessible websites 
+                    that support the broadest circle of people.
+                    </h2>
+                    </div>
+                </div>
+                <div className={sectionStyle.drag}>
 
-          </div>
-          <div className="side"></div>
+                </div>
+                <div className={sectionStyle.pattern}>
+            
+                </div>
+            </div>
+           
+    
         </section>
     );
 

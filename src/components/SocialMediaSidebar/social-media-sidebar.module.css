@@ -68,7 +68,7 @@ a:hover > .em, a:focus > .em {
 }
 
 @media only screen
-and (min-width: 1250px) {
+and (min-width: 1220px) {
     .social {
         width: 72px;
         height: 232px;
