@@ -39,6 +39,12 @@ const TemplateWrapper = ({ children }) => (
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
           <meta property="og:image" content="/img/a-image.jpg" />
+
+          <style type="text/css">{`
+              html, body, div#___gatsby {
+                overflow-x: auto !important;
+            }
+          `}</style>
         </Helmet>
           <Navbar />
           <main id="main" style={mainStyle} tabIndex="-1">
