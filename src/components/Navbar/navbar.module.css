@@ -11,6 +11,7 @@
     min-height: 3.4rem;
     width: 100%;
     border-bottom: 1px solid #666;
+    overflow-x: auto;
 }
 
 .logo:focus, logo:hover {

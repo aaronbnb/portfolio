@@ -4,12 +4,14 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from './Navbar/Navbar'
 import './all.sass'
+import './style.css'
 
 const mainStyle = {
   'minWidth': '380px',
   'margin': '0 auto',
   'outline': 'none'
 }
+
 
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
@@ -33,10 +35,9 @@ const TemplateWrapper = ({ children }) => (
           <link rel="apple-touch-icon" sizes="180x180" href="/img/a-logo.png" />
 	        <link rel="icon" type="image/png" href="/img/a-logo.png" sizes="32x32" />
 	        <link rel="icon" type="image/png" href="/img/a-logo.png" sizes="16x16" />
-	
 	        <link rel="mask-icon" href="/img/a-logo.png" color="#ff4400" />
 	        <meta name="theme-color" content="#fff" />
-
+      
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />

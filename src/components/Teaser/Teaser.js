@@ -25,10 +25,10 @@ const Teaser = ({ children }) => (
                 <div id={teaserStyle.teaser}>
                     <div>
                         <p className={teaserStyle.header}>
-                        <strong>I'm a developer at Be Accessible, a startup helping organizations build accessible sites.</strong> 
+                        <strong>I help organizations build accessible sites</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                       
+                       I'm an
                         </p>
                     </div>
                     <br></br> 
