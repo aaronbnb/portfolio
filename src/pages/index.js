@@ -4,7 +4,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero/Hero'
 import Teaser from '../components/Teaser/Teaser'
-import Section from '../components/Section/Section'
+import AuditSection from '../components/AuditSection/AuditSection'
+import WorkshopSection from '../components/WorkshopSection/WorkshopSection'
 
 
 export default class IndexPage extends React.Component {
@@ -29,7 +30,17 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Hero />
         <Teaser />
-        <Section
+        <AuditSection
+          emphasis="I teach web development and cyber security " 
+          heading="at UCLA Extension. I’ve helped tens of students 
+          change careers into technology. Just like I did."
+          linkText="View Full Workshop Schedule"
+          destination="products"
+          id="1"
+          mainColor="#001F3F"
+          textColor="#f7f7f7"
+        />
+        <WorkshopSection
           emphasis="I teach web development and cyber security " 
           heading="at UCLA Extension. I’ve helped tens of students 
           change careers into technology. Just like I did."

@@ -18,14 +18,13 @@
 } */
 
 #patternoverlay {
-    /* background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%); */
+    background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
     /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
-    background: linear-gradient(to right, #614385, #516395);
 
     position: relative;
     z-index: 3;
     height: 100%;
-    opacity: .3;
+    opacity: .5;
 }
     /*Free Faux Stones SVG provided by SVGeez.com - CC 4.0 License - © 2019 Megan Young */
 /* #pattern {
@@ -60,19 +59,22 @@ and (max-width: 832px) {
     padding-left: 32px;
     margin-right: 32px;
     background-color: transparent;
-    font-weight: 600;
     border-top: 3px solid #011118;
     border-bottom: 3px solid #011118;
     border-right: 3px solid #011118;
 }
 
 .header {
-    color: #011118;
+    color: #3a3a3a;
     margin-bottom: 0px;
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 
 .header strong {
     color: #011118;
+    font-weight: 500;
+    font-size: 1.3rem;
 }
 
 @media only screen 

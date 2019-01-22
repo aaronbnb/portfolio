@@ -25,19 +25,19 @@ const Teaser = ({ children }) => (
                 <div id={teaserStyle.teaser}>
                     <div>
                         <p className={teaserStyle.header}>
-                        <strong>I teach web development and cyber security at UCLA Extension.</strong> 
+                        <strong>I'm a developer at Be Accessible, a startup helping organizations build accessible sites.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                        I’ve helped tens of students change careers into technology. Just like I did.
+                       
                         </p>
                     </div>
                     <br></br> 
                     <div>
                         <p className={teaserStyle.header}>
-                            <strong>I run acccessibility workshops</strong> 
+                            <strong>I teach full stack web development and cybersecurity at UCLA Extension.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                        teaching developers how to build applications that support the broadest circle of people.
+                        I’ve helped tens of students change careers into technology. Just like I did.
                         </p>
                     </div>
                     
