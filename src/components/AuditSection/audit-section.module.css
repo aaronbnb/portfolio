@@ -69,11 +69,11 @@ and (max-width: 460px) {
         border-left: 0px;
     }
     .text {
-        margin-left: 42px;
+        margin-left: 58px;
     }
 
     .pattern {
-        margin-right: -32px;
-        width: 32px;
+        margin-right: -48px;
+        width: 48px;
     }
 }

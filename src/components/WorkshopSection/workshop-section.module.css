@@ -70,14 +70,14 @@ and (max-width: 460px) {
         border-right: 0px;
         width: 100%;
         position: relative;
-        margin-right: -32px;
+        margin-right: -42px;
     }
 
 
     .pattern {
         position: absolute;
         right: 0px;
-        width: 32px;
+        width: 42px;
         margin-left: 0px;
     }
 
