@@ -11,7 +11,6 @@
     min-height: 3.4rem;
     width: 100%;
     border-bottom: 1px solid #666;
-    overflow-x: auto;
 }
 
 .logo:focus, logo:hover {
@@ -164,8 +163,9 @@ a.navlistlink:hover, a.navlistlink:focus {
         margin-bottom: 12px;
     }
 }
-
-
+nav.navbar {
+    overflow-x: auto;
+}
 
 @media only screen and (min-width: 925px) {
     button.navburg {

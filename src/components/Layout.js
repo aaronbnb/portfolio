@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from './Navbar/Navbar'
 import './all.sass'
-import './style.css'
 
 const mainStyle = {
   'minWidth': '380px',
