@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 import navbarStyles from "./navbar.module.css"
-// import home from '../../img/home.png'
+import  './../style.css'
 
 const Navbar = class extends React.Component {
 

@@ -11,7 +11,6 @@ const mainStyle = {
   'outline': 'none'
 }
 
-
 const TemplateWrapper = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -36,7 +35,6 @@ const TemplateWrapper = ({ children }) => (
 	        <link rel="icon" type="image/png" href="/img/a-logo.png" sizes="16x16" />
 	        <link rel="mask-icon" href="/img/a-logo.png" color="#ff4400" />
 	        <meta name="theme-color" content="#fff" />
-      
 	        <meta property="og:type" content="business.business" />
           <meta property="og:title" content={data.site.siteMetadata.title} />
           <meta property="og:url" content="/" />
