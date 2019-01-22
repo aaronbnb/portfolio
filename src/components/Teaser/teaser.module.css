@@ -64,6 +64,10 @@ and (max-width: 832px) {
     border-right: 3px solid #011118;
 }
 
+.link {
+    text-decoration: underline;
+}
+
 .header {
     color: #3a3a3a;
     margin-bottom: 0px;
