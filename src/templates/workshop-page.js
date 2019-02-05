@@ -2,31 +2,39 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import ExerciseCard from '../components/ExerciseCard/ExerciseCard'
 import Content, { HTMLContent } from '../components/Content'
 
 export const Module = ({ modules }) => 
   {
-    console.log(modules)
 
-    const moduleRows = modules.map(({ topic, time, exercises}, i) =>
-      <tr key={i}>
-        <td disabled={topic.includes('Break')}>{topic}</td>
-        <td>{time}</td>
-      </tr>
-    );
+    // const moduleRows = modules.map(({ topic, time, exercises}, i) =>
+    //   <tr key={i}>
+    //     <td disabled={topic.includes('Break')}>{topic}</td>
+    //     <td>{time}</td>
+    //   </tr>
+    // );
+
+  //   <table className="table is-striped is-bordered">
+  //   <thead>
+  //     <tr>
+  //       <th>Module</th>
+  //       <th>Time</th>
+  //     </tr>
+  //   </thead>
+  //     <tbody>
+  //       {moduleRows}
+  //     </tbody>
+  // </table>
+
+    const moduleCards = (<ul style={{'margin': '0px'}}>
+      {modules.map(({ topic, time, exercises}, i) =>
+        <ExerciseCard topic={topic} time={time} exercises={exercises} id={i} key={i}/>)}
+      </ul>
+  );
 
     return (<div>
-    <table className="table is-striped is-bordered">
-      <thead>
-        <tr>
-          <th>Module</th>
-          <th>Time</th>
-        </tr>
-      </thead>
-        <tbody>
-          {moduleRows}
-        </tbody>
-    </table>
+        {moduleCards}
   </div>)
   }
 
@@ -35,21 +43,15 @@ export const WorkshopPageTemplate = ({ title, content, contentComponent, modules
   const PageContent = contentComponent || Content
 
   return (
-    <section className="section section--gradient">
-      <div className="container">
-        <div className="columns">
-          <div className="column is-10">
-            <div className="section">
-              <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
-                {title}
-              </h2>
-              <p>{description}</p>
-              <PageContent className="content" content={content} />
-              <Module modules={modules}/>
-            </div>
-          </div>
+    <section>
+        <div>
+          <h2 className="title is-size-3 has-text-weight-bold is-bold-light">
+            {title}
+          </h2>
         </div>
-      </div>
+        <p>{description}</p>
+        <PageContent className="content" content={content} />
+        <Module modules={modules}/>
     </section>
   )
 }

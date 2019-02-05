@@ -1,0 +1,95 @@
+
+.boxsection {
+    width: 100%;
+    margin-bottom: 0px;
+    display: block;
+}
+
+/* .boxsection:nth-child(even) {
+    background-image: linear-gradient(180deg,rgba(96,139,206,.1),rgba(96,139,206,.1));
+} */
+
+
+.box {
+    width: 60%;
+    margin-left: 32px;
+    margin-right: 32px;
+    min-width: 270px;
+    transition: all 0.24s ease 0s, opacity 300ms ease 0s, transform 300ms ease 0s;
+    border: 1px solid #dbdbdb;
+}
+
+.boxsection:nth-child(even) .box {
+    background-image: linear-gradient(180deg,rgba(249, 249, 249, 0.979),hsla(0,0%,98%,.65));
+}
+.boxsection:nth-child(odd) .box {
+    background-image: linear-gradient(180deg,rgba(96,139,206,.1),rgba(96,139,206,.1));
+}
+
+
+.topicbox {
+    width: 100%;
+    padding: 10px;
+    margin-right: 5px;
+    border-right: 1px solid #dbdbdb;
+}
+
+.timebox {
+    width: 80px;
+    padding: 0px 5px;
+}
+
+@media only screen 
+and (min-width: 1400px) {
+    .timebox {
+       width: 300px;
+    }
+}
+
+@media only screen 
+and (max-width: 900px) {
+    .box {
+       width: auto;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+
+.time {
+    color: black;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+
+
+.exercise {
+    color: black;
+    margin-bottom: 0px;
+    width: 80%;
+    min-width: 270px;
+    font-weight: 400;
+    list-style: circle;
+    margin-left: 20px;
+}
+
+.topic {
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+    font-weight: 400;
+    vertical-align: middle;
+}
+
+.exercises {
+    color: black;
+    width: 100%;
+    border-top: 1px solid #dbdbdb;
+    padding: 10px;
+}

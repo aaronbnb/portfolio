@@ -3,10 +3,8 @@ templateKey: 'workshop-page'
 path: /workshop
 title: Web Accessibility Workshop
 heading: I run workshops, teaching developers how to build applications that support the broadest circle of people - before a court makes them.
-introOne: Technology is evolving. The internet has grown from email and search into an institution that connects every activity of our lives. Countless processes, from buying plane tickets or checking one's account balance, are almost exclusively online.
-introTwo: People use the internet differently. With each person, there's an a large set of variables that allow them to benefit. A person has an operating system, a device and screen, a browser, a level of bandwidth, and most importantly, their own cognitive process for understanding and navigating a website. For some that might not be able to view a screen or hold a mouse, tens of million will use some form of assistive technology such as screen readers or keyboard navigation. Everyone wants to share in the full benefit of technology and have a joyful experience on a website. 
-introThree: Accessibility laws are changing. Similar to how some store locations must have a ramp or a certain door width, your website, or online store, must follow particular design steps to support assistive technlogy. Courts are regularly determining that anti-discrimination laws apply to online settings and there may not be undue barriers to using a website or app. 
-introFour: Most of these online barriers are via flaws in frontend code – flaws that could have been prevented by developers understanding the core principles of accessibility and having the tools to evaluate and iterate on their own development. 
+introOne: Accessibility laws are changing. Similar to how some store locations must have a ramp or a certain door width, your website, or online store, must follow particular design steps to support assistive technlogy. Courts are regularly determining that anti-discrimination laws apply to online settings and there may not be undue barriers to using a website or app. 
+introTwo: Most of these online barriers are via flaws in frontend code – flaws that could have been prevented by developers understanding the core principles of accessibility and having the tools to evaluate and iterate on their own development. 
 teaser: I'm excited to introduce the workshop helping developers and designers reach beyond compliance to deliver a joyful online experience. 
 descriptionOne: This developer-centric crash course starts at a high level, covering the regulatory landscape and key conclusions from the explosion of web accessibility lawsuits. Participants will learn how to sustainably integrate accessibility in their development workflows and more broadly within their organization. Then most of the day is spent on the nuts and bolts - the code.
 descriptionTwo: It is not a lecture. Technology people learn by doing. It's a day full of specially built activities designed to inform, challenge, and entertain - that is important. The participants test out screen readers and learn how assistive technology works. We quickly go from building basic forms to implementing complex, dynamic UI features. There's a deep dive on single page applications like React or Angular. 
@@ -23,8 +21,8 @@ modules:
   - topic: Evaluate the Business Case for Accessibility
     time: '9:40'
     exercises: 
-      - exercise: iPhone, Instacart, and the Recurring Disabled Consumer - Brainstorming
       - exercise: Test How Accessibility Affects SEO
+      - exercise: Loyal Disabled Consumers - iPhone, Xbox, and Instacart
   - topic: DOM and Accessibility Tree
     time: '9:55'
     exercises: 
@@ -39,8 +37,8 @@ modules:
   - topic: Semantic HTML
     time: '11:00'
     exercises:
-      - exercise: JavaScript and the Accessible Click
       - exercise: Build A Button From Scratch
+      - exercise: JavaScript and the Accessible Click
   - topic: HTML5
     time: '11:40'
     exercises:

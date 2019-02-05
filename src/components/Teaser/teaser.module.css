@@ -71,14 +71,14 @@ and (max-width: 832px) {
 .header {
     color: #3a3a3a;
     margin-bottom: 0px;
-    font-weight: 600;
-    font-size: 1.1rem;
+    font-weight: 500;
+    font-size: 1rem;
 }
 
 .header strong {
     color: #011118;
-    font-weight: 500;
-    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 @media only screen 

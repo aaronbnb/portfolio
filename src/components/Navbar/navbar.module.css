@@ -181,6 +181,10 @@ a.navlistlink:hover, a.navlistlink:focus {
         padding-left: 34px;
         padding-right: 34px;
     }
+
+    .logo {
+        padding-left: .1rem !important;
+    }
 }
 
 

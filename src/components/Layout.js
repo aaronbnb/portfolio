@@ -3,6 +3,8 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from "gatsby"
 
 import Navbar from './Navbar/Navbar'
+// import Footer from './Footer/Footer';
+
 import './all.sass'
 
 const mainStyle = {
@@ -51,7 +53,7 @@ const TemplateWrapper = ({ children }) => (
           <main id="main" style={mainStyle} tabIndex="-1">
             {children}
           </main>
- 
+          
       </Fragment>
     )}
   />
