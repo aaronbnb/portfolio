@@ -24,7 +24,7 @@
     position: relative;
     z-index: 3;
     height: 100%;
-    opacity: .5;
+    opacity: .2;
 }
     /*Free Faux Stones SVG provided by SVGeez.com - CC 4.0 License - © 2019 Megan Young */
 /* #pattern {
@@ -33,6 +33,7 @@
 } */
 
 #pattern {
+    background: repeating-linear-gradient(135deg, rgb(64, 78, 136), rgb(64, 78, 136) 1px, transparent 1px, transparent 6px);
      width: 800px;
     height: 200px;
     margin-left: 32px;
