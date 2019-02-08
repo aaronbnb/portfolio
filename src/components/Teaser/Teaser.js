@@ -34,7 +34,7 @@ const Teaser = ({ children }) => (
                     <br></br> 
                     <div>
                         <p className={teaserStyle.header}>
-                        <strong>I've taught web development and cyber security, helping tens of students shift their careers into technology - just like I did.</strong> 
+                        <strong>I've taught web development and cyber security, helping tens of students shift careers into technology - just like I did.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
                         I serve as a Teaching Assistant for the Cyber Security program at <a href="https://bootcamp.uclaextension.edu/" rel="noopener noreferrer" className={teaserStyle.link}>UCLA Extension</a>.
