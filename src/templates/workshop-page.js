@@ -93,14 +93,11 @@ export const workshopPageQuery = graphql`
         heading
         introOne
         introTwo
-        introThree
-        introFour
         teaser
         descriptionOne
         descriptionTwo
         descriptionThree
         descriptionFour
-        description
         modules {
           topic
           time
