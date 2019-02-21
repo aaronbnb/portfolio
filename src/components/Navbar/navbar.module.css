@@ -3,6 +3,9 @@
 }
 
 
+nav.navbar {
+    background-color: #efefef;
+}
 
 .navcontainer {
     align-items: flex-end;
@@ -11,7 +14,7 @@
     min-height: 3.4rem;
     width: 100%;
     border-bottom: 1px solid #666;
-    background-color: #efefef;
+
 }
 
 .logo:focus, logo:hover {
