@@ -62,7 +62,8 @@ and (max-width: 832px) {
     padding-bottom: 38px;
     padding-right: 32px;
     padding-left: 32px;
-    margin-right: 32px;
+    margin-right: 32px; 
+    position: relative;
     z-index: 2;
     background-color: transparent;
     border-top: 3px solid #011118;
