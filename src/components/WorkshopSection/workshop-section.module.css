@@ -4,6 +4,8 @@
     justify-content: flex-end;
     margin: 20px 0px;
     position: relative;
+    margin-left: 32px;
+    padding-top: 20px;
 }
 
 span.emphasis {
