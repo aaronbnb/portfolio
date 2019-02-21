@@ -42,7 +42,7 @@
     height: 200px;
     margin-left: 32px;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     margin-bottom: -90px;
     /* background: url('/img/palm-trees-bw-min.png'); */
     /* background-size: contain; */
@@ -63,6 +63,7 @@ and (max-width: 832px) {
     padding-right: 32px;
     padding-left: 32px;
     margin-right: 32px;
+    z-index: 2;
     background-color: transparent;
     border-top: 3px solid #011118;
     border-bottom: 3px solid #011118;

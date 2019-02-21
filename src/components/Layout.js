@@ -46,6 +46,7 @@ const TemplateWrapper = ({ children }) => (
               html, body, div#___gatsby {
                 overflow-x: hidden !important;
                 width: 100%;
+                backgroundColor: #efefef;
             }
           `}</style>
         </Helmet>
