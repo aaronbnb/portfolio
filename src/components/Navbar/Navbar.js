@@ -65,8 +65,8 @@ const Navbar = class extends React.Component {
       <div>
       <ul className={navbarStyles.navlist}>
         <li className={navbarStyles.navlistitem}>
-        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact/examples">
-          Workshops
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/workshop">
+          Workshop
         </Link>
         </li>
         <li className={navbarStyles.navlistitem}>
@@ -93,3 +93,22 @@ const Navbar = class extends React.Component {
 }
 
 export default Navbar
+
+{/* <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact/examples">
+Workshops
+</Link>
+</li>
+<li className={navbarStyles.navlistitem}>
+<Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/products">
+Development
+</Link>
+</li>
+<li className={navbarStyles.navlistitem}>
+<Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact">
+Writing
+</Link>
+</li>
+<li className={navbarStyles.navlistitem}>
+<Link className={`navbar-item ${navbarStyles.navlistlink}`} to="about">
+About
+</Link> */}
