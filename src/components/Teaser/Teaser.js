@@ -25,7 +25,7 @@ const Teaser = ({ children }) => (
                 <div id={teaserStyle.teaser}>
                     <div>
                         <p className={teaserStyle.header}>
-                        <strong>I build web applications that support the broadest circle of people including those using assistive technology</strong> 
+                        <strong>I design and build web applications that support the broadest circle of people including those with disabilities.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
                         I currently work as the Technical Lead at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>
