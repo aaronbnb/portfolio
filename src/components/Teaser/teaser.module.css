@@ -17,6 +17,10 @@
     margin-bottom: -68px;
 } */
 
+#big {
+    margin-bottom: 30px;
+}
+
 #patternoverlay {
     background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
     /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */

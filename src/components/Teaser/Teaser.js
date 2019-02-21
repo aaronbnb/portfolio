@@ -17,7 +17,7 @@ const Teaser = ({ children }) => (
     `}
     render={data => (
         <section>
-            <div id="big">
+            <div id={teaserStyle.big}>
                 <div id={teaserStyle.pattern}> 
                     <div id={teaserStyle.patternoverlay}></div>
                 </div>
