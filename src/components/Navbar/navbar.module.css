@@ -178,7 +178,6 @@ a.navlistlink:hover, a.navlistlink:focus {
     }
 
     nav.navbar {
-        background-color: white;
         min-height: 3.25rem;
         position: relative;
         z-index: 30;
