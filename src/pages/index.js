@@ -30,26 +30,7 @@ export default class IndexPage extends React.Component {
       <Layout>
         <Hero />
         <Teaser />
-        <AuditSection
-          emphasis="I teach web development and cyber security " 
-          heading="at UCLA Extension. I’ve helped tens of students 
-          change careers into technology. Just like I did."
-          linkText="View Full Workshop Schedule"
-          destination="products"
-          id="1"
-          mainColor="#001F3F"
-          textColor="#f7f7f7"
-        />
-        <WorkshopSection
-          emphasis="I teach web development and cyber security " 
-          heading="at UCLA Extension. I’ve helped tens of students 
-          change careers into technology. Just like I did."
-          linkText="View Full Workshop Schedule"
-          destination="products"
-          id="1"
-          mainColor="#001F3F"
-          textColor="#f7f7f7"
-        />
+  
       </Layout>
     )
   }
@@ -81,3 +62,23 @@ export const pageQuery = graphql`
     }
   }
 `
+{/* <AuditSection
+emphasis="I teach web development and cyber security " 
+heading="at UCLA Extension. I’ve helped tens of students 
+change careers into technology. Just like I did."
+linkText="View Full Workshop Schedule"
+destination="products"
+id="1"
+mainColor="#001F3F"
+textColor="#f7f7f7"
+/>
+<WorkshopSection
+emphasis="I teach web development and cyber security " 
+heading="at UCLA Extension. I’ve helped tens of students 
+change careers into technology. Just like I did."
+linkText="View Full Workshop Schedule"
+destination="products"
+id="1"
+mainColor="#001F3F"
+textColor="#f7f7f7"
+/> */}
