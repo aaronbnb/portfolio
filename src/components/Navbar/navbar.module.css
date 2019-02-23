@@ -122,6 +122,8 @@ a.navlistlink:hover, a.navlistlink:focus {
 
     .logo {
         margin-bottom: 2px !important;
+        padding-left: 15px;
+        margin-left: 17px;
     }
 
     button.navburg:hover, button.navburg:focus {
