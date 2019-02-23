@@ -24,8 +24,7 @@ const Teaser = ({ children }) => (
                
                 <div id={teaserStyle.teaser}>
                     <div>
-                        <p className={teaserStyle.header}>
-                        <strong>I help organizations create online experiences that support the broadest circle of people including those with disabilities.</strong> 
+                        <p className={teaserStyle.header}> 
                         <strong>I help organizations create online experiences that satisfy accessibility laws and support the broadest circle of people.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
