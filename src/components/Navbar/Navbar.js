@@ -82,8 +82,13 @@ const Navbar = class extends React.Component {
       <div>
       <ul className={navbarStyles.navlist}>
         <li className={navbarStyles.navlistitem}>
+        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="about">
+          About
+        </Link>
+        </li>
+        <li className={navbarStyles.navlistitem}>
         <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact">
-          Get in touch
+          Contact
         </Link>
         </li>
         </ul>
