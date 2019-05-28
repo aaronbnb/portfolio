@@ -23,9 +23,11 @@ const Navbar = class extends React.Component {
          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
          if(el.getAttribute('aria-expanded') === 'true') {
           el.setAttribute('aria-expanded', 'false');
+          el.classList.remove('open');
           $target.setAttribute('expanded', 'false');
          } else {
           el.setAttribute('aria-expanded', 'true');
+          el.classList.add('open');
           $target.setAttribute('expanded', 'true');
          }
          
@@ -47,8 +49,8 @@ const Navbar = class extends React.Component {
           Aaron Farber
         </Link>
         
-        {/* Hamburger menu */}
-        <button id="navburg" className={navbarStyles.navburg} 
+       
+        {/* <button id="navburg" className={navbarStyles.navburg} 
           data-target="navMenu" 
           aria-label="Navigation Menu Button"
           aria-expanded="false"
@@ -56,7 +58,22 @@ const Navbar = class extends React.Component {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </button>
+        </button> */}
+
+        <div className={navbarStyles.wrapper}
+          id="navburg" 
+          data-target="navMenu" 
+          aria-label="Navigation Menu Button"
+          aria-expanded="false"
+          aria-controls="navMenu"
+          >
+       
+          <div className={`${navbarStyles.line} ${navbarStyles.half} ${navbarStyles.start}`}></div>
+          <div className={navbarStyles.line}></div>
+          <div className={`${navbarStyles.line} ${navbarStyles.half} ${navbarStyles.end}`}></div>
+        </div>
+
+
       </div>
       <div id="navMenu" 
         className={navbarStyles.navybarmenu}
@@ -65,23 +82,8 @@ const Navbar = class extends React.Component {
       <div>
       <ul className={navbarStyles.navlist}>
         <li className={navbarStyles.navlistitem}>
-        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/workshop">
-          Workshop
-        </Link>
-        </li>
-        <li className={navbarStyles.navlistitem}>
-        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/products">
-          Development
-        </Link>
-        </li>
-        <li className={navbarStyles.navlistitem}>
         <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="/contact">
-          Writing
-        </Link>
-        </li>
-        <li className={navbarStyles.navlistitem}>
-        <Link className={`navbar-item ${navbarStyles.navlistlink}`} to="about">
-          About
+          Get in touch
         </Link>
         </li>
         </ul>

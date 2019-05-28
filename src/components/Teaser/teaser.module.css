@@ -39,11 +39,11 @@
 #pattern {
     background: repeating-linear-gradient(135deg, rgb(64, 78, 136), rgb(64, 78, 136) 1px, transparent 1px, transparent 6px);
      width: 800px;
-    height: 200px;
+    height: 181px;
     margin-left: 32px;
     position: relative;
     z-index: 1;
-    margin-bottom: -90px;
+    margin-bottom: -91px;
     /* background: url('/img/palm-trees-bw-min.png'); */
     /* background-size: contain; */
     

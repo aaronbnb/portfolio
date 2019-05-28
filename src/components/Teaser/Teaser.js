@@ -28,7 +28,7 @@ const Teaser = ({ children }) => (
                         <strong>I help organizations create online experiences that satisfy accessibility laws and support the broadest circle of people.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                        I currently work as the Technical Lead at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>
+                        I'm an IAAP-certified Web Accessibility Specialist and do all things at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>
                         </p>
                     </div>
                     <br></br> 
