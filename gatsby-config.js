@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: 'Aaron Farber - Developer, Web Accessibility Consultant',
-    headline: "Do you need an accessible website?",
+    headline: "I help organizations design and build accessible, secure websites",
     headline2: "Hello! I help organizations create online experiences that support the broadest circle of people.",
-    description: "I audit, design, build, and teach people how. I've recently helped amazing brands like Gelson's. I'm based in LA."
+    description: "I've built a business from scratch and share that experience. I also run workshops teaching developers how to consider accessibility in their development. I'm based in LA."
   },
   plugins: [
     'gatsby-plugin-react-helmet',

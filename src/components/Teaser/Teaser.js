@@ -25,19 +25,19 @@ const Teaser = ({ children }) => (
                 <div id={teaserStyle.teaser}>
                     <div>
                         <p className={teaserStyle.header}> 
-                        <strong>I help organizations create online experiences that satisfy accessibility laws and support the broadest circle of people.</strong> 
+                        <strong>I help organizations create inclusive online experiences and achieve accessibility compliance goals.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                        I'm an IAAP-certified Web Accessibility Specialist and do all things at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>
+                        I'm an IAAP-certified Web Accessibility Specialist and do all things at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>. Every business is different. I audit websites, make recommendations, and handle the development for code fixesranging from WordPress and Shopify to Webflow. I make all our internal technology decisions and love it!
                         </p>
                     </div>
                     <br></br> 
                     <div>
                         <p className={teaserStyle.header}>
-                        <strong>I teach web development and cyber security, helping tens of students learn programming and shift careers into technology - just like I did.</strong> 
+                        <strong>I teach web development and cyber security, helping tens of students learn to build an accessible, secure internet, and shift careers into technology - just like I did.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                        I serve as a Teaching Assistant for the Cyber Security program at <a href="https://bootcamp.uclaextension.edu/" rel="noopener noreferrer" className={teaserStyle.link}>UCLA Extension</a>.
+                        I serve as a Teaching Assistant for the Cyber Security program at <a href="https://bootcamp.uclaextension.edu/" rel="noopener noreferrer" className={teaserStyle.link}>UCLA Extension</a>. I run free workshops, training technology professionals how to support the broadest circle of people, particularly those that rely on assistive technology such as screen readers.
                         </p>
                     </div>
                     
