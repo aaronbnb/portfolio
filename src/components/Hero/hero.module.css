@@ -3,6 +3,9 @@
     font-size: 6vw;
     font-weight: 500;
     color: #55348e;
+    background: -webkit-linear-gradient(45deg, #880c96, #55348e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 500;
 }
 
@@ -10,6 +13,9 @@
 .subtitle {
     color: #8172a0;
     font-size: 5.5vw;
+    background: -webkit-linear-gradient(45deg, #880c96, #55348e 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: 600;
 }
 
