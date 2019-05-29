@@ -18,7 +18,7 @@ nav.navbar {
 }
 
 .logo {
-    color: #55348e;
+    color: #55348e !important;
 }
 
 .logo:focus, .logo:hover {
