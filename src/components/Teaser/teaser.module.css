@@ -26,7 +26,10 @@
 }
 
 .header a:focus, .header a:hover {
-    color: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 0;
 }
 
 #patternoverlay {
