@@ -21,6 +21,10 @@
     margin-bottom: 30px;
 }
 
+.header {
+    margin-bottom: .5em;
+}
+
 .header a {
     color: #095fe8;
 }
