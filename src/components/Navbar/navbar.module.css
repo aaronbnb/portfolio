@@ -20,6 +20,7 @@ nav.navbar {
 .logo:focus, logo:hover {
     color: #3273dc;
     transition: all .3s ease-in-out;
+    box-shadow: 0 0 3pt 2pt #55348e; 
 }
 
 .logo:hover::after, .logo:active::after {
@@ -56,6 +57,7 @@ a.navlistlink:hover, a.navlistlink:focus {
     background: #47639b !important;
     background-clip: padding-box !important;
     color: white !important;
+    box-shadow: 0 0 3pt 2pt #55348e; 
 }
 
 .navlist {
