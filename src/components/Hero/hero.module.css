@@ -60,6 +60,17 @@ and (min-width: 1087px) {
     }
 }
 
+@media only screen 
+and (max-width: 387px) {
+    div.contained {
+        width: 200px;
+    }
+
+    .hero {
+        justify-content: flex-start;
+    }
+}
+
 div.contained {
     max-width: 1000px;
     color: #55348e;
