@@ -25,11 +25,11 @@ const Teaser = ({ children }) => (
                 <div id={teaserStyle.teaser}>
                     <div class={teaserStyle.container}>
                         <p className={teaserStyle.header}> 
-                        <strong>I help organizations create inclusive online experiences and achieve accessibility compliance goals.</strong> 
+                        <strong>I help organizations understand accessibility guidelines, create inclusive online experiences and achieve accessibility compliance goals.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
                         I'm an IAAP-certified Web Accessibility Specialist and Technology Director at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>.</p>
-                        <p className={teaserStyle.header}>For our clients, I identify accessibility challenges and potential legal risks in their website's design, and provide recommended fixes. I've handled development for WordPress, Shopify, and even custom React applications. </p>
+                        <p className={teaserStyle.header}>For our clients, I identify accessibility challenges and potential legal risks in their website's design, and provide recommendations. I do all the code fixes and have handled development for WordPress, Shopify, and even custom React applications. </p>
                     </div>
                     <br></br> 
                     <div class={teaserStyle.container}>
