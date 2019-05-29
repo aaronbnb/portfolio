@@ -250,10 +250,10 @@ a.navlistlink:hover, a.navlistlink:focus {
   }
   
   .line {
-    background-color: #262626;
+    background-color: #4a4a4a;
     border-radius: 5px;
     width: 100%;
-    height: 6px;
+    height: 4px;
   }
   
   .line.half {
