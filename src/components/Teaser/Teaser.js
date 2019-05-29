@@ -28,7 +28,7 @@ const Teaser = ({ children }) => (
                         <strong>I help organizations create inclusive online experiences and achieve accessibility compliance goals.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                        I'm an IAAP-certified Web Accessibility Specialist and do all things tech at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>. I audit websites, provide recommendations, and handle the development on everything from WordPress and Shopify to custom React applications. 
+                        I'm an IAAP-certified Web Accessibility Specialist and Technology Director at <a href="https://beaccessible.com" rel="noopener noreferrer" className={teaserStyle.link}>Be Accessible</a>. I identify accessibility challenges and potential legal risks in the design of our clients' websites, and provide recommended fixes. I've handled development for WordPress, Shopify, and even custom React applications. 
                         </p>
                     </div>
                     <br></br> 
