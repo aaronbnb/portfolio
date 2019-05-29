@@ -133,6 +133,9 @@ a.navlistlink:hover, a.navlistlink:focus {
         position: relative;
         margin-left: auto;
         background-color: transparent;
+    }
+
+    #navburg {
         margin-right: 30px;
     }
 
