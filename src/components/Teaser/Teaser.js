@@ -38,7 +38,8 @@ const Teaser = ({ children }) => (
                         </p>
                         <p className={teaserStyle.header}>
                         I serve as a Teaching Assistant for the Cyber Security program at <a href="https://bootcamp.uclaextension.edu/" rel="noopener noreferrer" className={teaserStyle.link}>UCLA Extension</a>.</p>
-                        <p>I also run workshops, training developers how to build applications that support the broadest circle of people, particularly those that rely on assistive technology.</p>
+                        <p className={teaserStyle.header}>
+                        I also run workshops, training developers how to build applications that support the broadest circle of people, particularly those that rely on assistive technology.</p>
                     </div>
                     
                 </div>
