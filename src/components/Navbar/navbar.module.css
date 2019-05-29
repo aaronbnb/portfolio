@@ -17,7 +17,11 @@ nav.navbar {
 
 }
 
-.logo:focus, logo:hover {
+.logo {
+    color: #55348e;
+}
+
+.logo:focus, .logo:hover {
     color: #3273dc;
     transition: all .3s ease-in-out;
 }
@@ -50,12 +54,15 @@ a.navlistlink {
     letter-spacing: .5px;
     transition: all 0.3s ease;
     padding-bottom: 0px;
+    color: #55348e;
 }
 
-a.navlistlink:focus {
+a.navlistlink:focus, a.navlistlink:hover {
     background: -webkit-linear-gradient(45deg,#880c96,#55348e 80%) !important;
     background-clip: padding-box !important;
     color: white !important;
+}
+a.navlistlink:focus {
     outline: #55348e;
 }
 
@@ -195,7 +202,7 @@ a.navlistlink:focus {
 
 :focus:not(:focus-visible) { outline: none !important }
 
-.wrapper:hover .line, .wrapper:focus .line {
+.wrapper:hover .line {
     background-color: #3273dc;
 }
 
