@@ -79,12 +79,12 @@ and (min-width: 330px) {
     .social {
         width: 72px;
         height: 232px;
-        margin-right: 28px;
-        transition: all .4s ease-in-out;
+        margin-right: 26px;
+        transition: all .3s ease-in-out;
     }
 
     .socialicon {
-        transition: all .4s ease-in-out;
+        transition: all .3s ease-in-out;
         background-repeat: no-repeat;
         height: 40px;
     }
