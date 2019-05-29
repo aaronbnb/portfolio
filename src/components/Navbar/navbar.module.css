@@ -2,11 +2,6 @@
     transition: all 0.2s ease;
 }
 
-
-nav.navbar {
-    background-color: #efefef;
-}
-
 .navcontainer {
     align-items: flex-end;
     display: flex;
