@@ -239,17 +239,19 @@ a.navlistlink:hover, a.navlistlink:focus {
 
 :focus:not(:focus-visible) { outline: none !important }
 
-
+.wrapper:hover .line {
+    background-color: #3273dc;
+}
   
   .wrapper[aria-expanded="true"] {
     transform: rotate(-45deg);  
   }
 
   .line {
-    background-color: #525252;
+    background-color: #6f6f6f;
     border-radius: 5px;
     width: 100%;
-    height: 3px;
+    height: .15em;
   }
   
   .line.half {
