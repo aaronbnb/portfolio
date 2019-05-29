@@ -49,7 +49,7 @@ a.navlistlink {
     font-size: .8rem;
     letter-spacing: .5px;
     transition: all 0.3s ease;
-    padding-bottom: 0px !important;
+    padding-bottom: 0px;
 }
 
 a.navlistlink:hover, a.navlistlink:focus {
@@ -251,7 +251,7 @@ a.navlistlink:hover, a.navlistlink:focus {
     background-color: #6f6f6f;
     border-radius: 5px;
     width: 100%;
-    height: .15em;
+    height: 3px;
   }
   
   .line.half {
