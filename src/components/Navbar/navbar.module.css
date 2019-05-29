@@ -239,7 +239,7 @@ a.navlistlink:hover, a.navlistlink:focus {
 
 :focus:not(:focus-visible) { outline: none !important }
 
-.wrapper:hover .line, .wrapper:hover .line {
+.wrapper:hover .line, .wrapper:focus .line {
     background-color: #3273dc;
 }
   
