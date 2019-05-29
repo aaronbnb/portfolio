@@ -60,6 +60,7 @@ a:hover > .em, a:focus > .em {
 }
 
 a:focus > .yt, a:focus > .gh, a:focus > .tw, a:focus > .em {
+    outline: none;
     outline: 2px solid #55348e;
     
 }
