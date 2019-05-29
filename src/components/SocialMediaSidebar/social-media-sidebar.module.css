@@ -79,7 +79,7 @@ and (min-width: 330px) {
     .social {
         width: 72px;
         height: 232px;
-        margin-right: 26px;
+        margin-right: 24px;
         transition: all .3s ease-in-out;
     }
 
