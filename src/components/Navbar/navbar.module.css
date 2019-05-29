@@ -20,7 +20,6 @@ nav.navbar {
 .logo:focus, logo:hover {
     color: #3273dc;
     transition: all .3s ease-in-out;
-    box-shadow: 0 0 3pt 2pt #55348e; 
 }
 
 .logo:hover::after, .logo:active::after {
@@ -53,11 +52,10 @@ a.navlistlink {
     padding-bottom: 0px;
 }
 
-a.navlistlink:hover, a.navlistlink:focus {
-    background: #47639b !important;
+a.navlistlink:focus {
+    background: -webkit-linear-gradient(45deg,#880c96,#55348e 80%) !important;
     background-clip: padding-box !important;
     color: white !important;
-    box-shadow: 0 0 3pt 2pt #55348e; 
     outline: #55348e;
 }
 
