@@ -22,11 +22,11 @@
 }
 
 .header a {
-    color: #095fe8 !important;
+    color: #095fe8;
 }
 
 .header a:focus, .header a:hover {
-    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    color: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
 }
 
 #patternoverlay {
