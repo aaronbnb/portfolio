@@ -37,7 +37,7 @@ const Teaser = ({ children }) => (
                         <strong>I teach web development and cyber security, helping tens of students learn to build an accessible, secure internet, and shift careers into technology - just like I did.</strong> 
                         </p>
                         <p className={teaserStyle.header}>
-                        I serve as a Teaching Assistant for the Cyber Security program at <a href="https://bootcamp.uclaextension.edu/" rel="noopener noreferrer" className={teaserStyle.link}>UCLA Extension</a>. I run free workshops, training technology professionals how to build applications that support the broadest circle of people, particularly those that rely on assistive technology such as screen readers.
+                        I serve as a Teaching Assistant for the Cyber Security program at <a href="https://bootcamp.uclaextension.edu/" rel="noopener noreferrer" className={teaserStyle.link}>UCLA Extension</a>. I run free workshops, training technology professionals how to build applications that support the broadest circle of people, particularly those that rely on assistive technology.
                         </p>
                     </div>
                     
