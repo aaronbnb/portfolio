@@ -72,7 +72,6 @@ and (max-width: 337px) {
 }
 
 div.contained {
-    max-width: 1000px;
     color: #55348e;
     background: -webkit-linear-gradient(45deg, #880c96, #55348e 80%);
     -webkit-background-clip: text;
