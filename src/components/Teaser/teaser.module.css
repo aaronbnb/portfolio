@@ -21,6 +21,14 @@
     margin-bottom: 30px;
 }
 
+.header a {
+    color: #095fe8 !important;
+}
+
+.header a:focus, .header a:hover {
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+}
+
 #patternoverlay {
     background-image: linear-gradient(to top, #a7a6cb 0%, #8989ba 52%, #8989ba 100%);
     /* background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
