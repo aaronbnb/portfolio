@@ -14,7 +14,7 @@ const SocialMediaSidebar = () => (
                 <div className={`${sidebarStyles.socialicon} ${sidebarStyles.tw}`}></div>
             </a>
               <span aria-hidden="true" className={sidebarStyles.tick}></span>
-            <a href="https://www.youtube.com"
+            <a href="https://www.youtube.com/channel/UCC6WkFKHdkjFUeIhMXZiIlQ"
                 title="YouTube" 
                 rel="noopener noreferrer"
                 aria-label="Aaron Farber YouTube channel external link"
