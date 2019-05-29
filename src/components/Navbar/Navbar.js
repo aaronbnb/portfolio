@@ -7,6 +7,12 @@ const Navbar = class extends React.Component {
   componentDidMount() {
     // Get all "navbar-burger" elements
    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('#navburg'), 0);
+
+   document.getElementById('navburg').addEventListener('keypress', function(event) {
+     if(event.key === 13 || event.key === 32) {
+       event.target.click();
+     }
+   })
     // Check if there are any navbar burgers
    if ($navbarBurgers.length > 0) {
  
@@ -66,6 +72,8 @@ const Navbar = class extends React.Component {
           aria-label="Navigation Menu Button"
           aria-expanded="false"
           aria-controls="navMenu"
+          role="button"
+          tabindex="0"
           >
        
           <div className={`${navbarStyles.line} ${navbarStyles.half} ${navbarStyles.start}`}></div>
