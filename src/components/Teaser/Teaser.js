@@ -23,7 +23,7 @@ const Teaser = ({ children }) => (
                 </div>
                
                 <div id={teaserStyle.teaser}>
-                    <div>
+                    <div class={teaserStyle.container}>
                         <p className={teaserStyle.header}> 
                         <strong>I help organizations create inclusive online experiences and achieve accessibility compliance goals.</strong> 
                         </p>
@@ -32,7 +32,7 @@ const Teaser = ({ children }) => (
                         <p className={teaserStyle.header}>For our clients, I identify accessibility challenges and potential legal risks in their website's design, and provide recommended fixes. I've handled development for WordPress, Shopify, and even custom React applications. </p>
                     </div>
                     <br></br> 
-                    <div>
+                    <div class={teaserStyle.container}>
                         <p className={teaserStyle.header}>
                         <strong>I teach web development and cyber security, helping tens of students learn programming and shift careers into technology - just like I did.</strong> 
                         </p>

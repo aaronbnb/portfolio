@@ -112,6 +112,11 @@ and (min-width: 1200px) {
     #teaser div {
         padding: 0px 3px;
     }
+
+    div.container {
+        width: 50%;
+        padding-left: .5em;
+    }
 }
 
 @media only screen 
