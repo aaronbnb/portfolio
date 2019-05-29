@@ -117,16 +117,6 @@ a.navlistlink:hover, a.navlistlink:focus {
   }
 
 @media only screen and (max-width: 924px) {
-    /* 
-    }
-
-    button.navburg:hover, button.navburg:focus {
-        background-color: rgba(0,0,0,.05);
-    }
-
-    button.navburg:focus {
-        outline: none;
-    } */
 
     .logocontainer {
         align-items: center !important;
@@ -186,9 +176,6 @@ a.navlistlink:hover, a.navlistlink:focus {
 }
 
 @media only screen and (min-width: 925px) {
-    div.navburg {
-        display: none;  
-    }
 
      ul.navlists {
         display: flex;
@@ -207,42 +194,14 @@ a.navlistlink:hover, a.navlistlink:focus {
     }
 }
 
-
-
-
-/* .navburg span {
-    background-color: currentColor;
-    display: block;
-    height: 1px;
-    left: calc(50% - 8px);
-    position: absolute;
-    -webkit-transform-origin: center;
-    transform-origin: center;
-    transition-duration: 86ms;
-    transition-property: background-color,opacity,-webkit-transform;
-    transition-property: background-color,opacity,transform;
-    transition-property: background-color,opacity,transform,-webkit-transform;
-    transition-timing-function: ease-out;
-    width: 16px;
-
-} */
-/* 
-.navburg span:nth-child(1) {
-    top: calc(50% - 6px);
-}
-
-.navburg span:nth-child(2) {
-    top: calc(50% - 1px);
-}
-
-.navburg span:nth-child(3) {
-    top: calc(50% + 4px);
-} */
-
 :focus:not(:focus-visible) { outline: none !important }
 
 .wrapper:hover .line, .wrapper:focus .line {
     background-color: #3273dc;
+}
+
+.wrapper:focus {
+    outline: 2px solid #55348e;
 }
   
   .wrapper[aria-expanded="true"] {

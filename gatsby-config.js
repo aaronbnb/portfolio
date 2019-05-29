@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Aaron Farber - Developer, Web Accessibility Consultant',
     headline: "I help organizations design and build accessible, secure websites",
-    description: "I'm a web developer and teacher. I've built a shoe-string tech startup and share my experience. I'm based in LA."
+    description: "I'm a web developer and teacher. I have a shoe-string tech startup and am learning every step of the way. I'm based in Los Angeles."
   },
   plugins: [
     'gatsby-plugin-react-helmet',
