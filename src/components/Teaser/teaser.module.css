@@ -56,7 +56,7 @@ p.header {
 } */
 
 #pattern {
-    background: repeating-linear-gradient(135deg, rgb(64, 78, 136), rgb(64, 78, 136) 1px, transparent 1px, transparent 6px);
+    background: repeating-linear-gradient(135deg,#664088,#983fc5 1px,transparent 0,transparent 6px);
      width: 800px;
     height: 181px;
     margin-left: 32px;
