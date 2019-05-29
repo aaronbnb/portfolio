@@ -9,6 +9,8 @@ const Navbar = class extends React.Component {
    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('#navburg'), 0);
 
    document.getElementById('navburg').addEventListener('keypress', function(event) {
+     console.log('here');
+     console.log(event);
      if(event.key === 13 || event.key === 32) {
        event.target.click();
      }
