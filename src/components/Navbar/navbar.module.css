@@ -133,6 +133,7 @@ a.navlistlink:hover, a.navlistlink:focus {
         position: relative;
         margin-left: auto;
         background-color: transparent;
+        margin-right: 30px;
     }
 
     .logocontainer {
