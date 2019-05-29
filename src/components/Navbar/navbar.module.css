@@ -21,8 +21,12 @@ nav.navbar {
     color: #55348e !important;
 }
 
+.logo:focus {
+    outline: 2px solid #55348e;
+}
+
 .logo:focus, .logo:hover {
-    color: #3273dc;
+    color: #3273dc !important;
     transition: all .3s ease-in-out;
 }
 
