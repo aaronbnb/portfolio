@@ -61,7 +61,7 @@ and (min-width: 1087px) {
 }
 
 @media only screen 
-and (max-width: 387px) {
+and (max-width: 337px) {
     div.contained {
         width: 200px;
     }
